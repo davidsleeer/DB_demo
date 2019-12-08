@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Table1]
+(
+	[Student_Id] INT NOT NULL PRIMARY KEY, 
+    [Name] NVARCHAR(50) NULL,
+	[Age] INT,
+	CONSTRAINT MY_TABLE_CC_AGE CHECK (Age >+ 18)
+)
